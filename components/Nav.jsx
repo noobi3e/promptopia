@@ -24,7 +24,7 @@ export const Nav = () => {
 
   return (
     <>
-      <nav className='py-4 flex w-full items-center justify-between px-4 mb-16'>
+      <nav className='mt-4 flex w-full items-center justify-between px-4 mb-16'>
         <Link href={'/'} className='flex gap-2 flex-center'>
           <Image
             alt='promptopia logo'
@@ -39,7 +39,7 @@ export const Nav = () => {
         <div className='sm:flex hidden'>
           {/* if user is logged in */}
           {session?.user && (
-            <div className='flex items-center gap-2'>
+            <div className='flex items-center gap-3'>
               <button className='black_btn' onClick={signOut}>
                 Sign Out
               </button>

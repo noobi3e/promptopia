@@ -26,8 +26,6 @@ const userSchema = new Schema({
 // export const userModel = model('users', userSchema)
 
 // but in next all the routes gets called when request is made so for that we don't want to create a new model every single time to avoid that we will the models object given by the mongoose which will keep tracks of all the models we have registered
-const User = models.user || model('user', userSchema)
+export const UserModel = models.user || model('user', userSchema)
 
 // above code will register a new model if there is no model with User exists
-
-export default User

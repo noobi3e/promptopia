@@ -5,7 +5,7 @@
 // in this file we will configure authentication using next-auth
 
 import { connectToDB } from '@/models/database'
-import UserModel from '@/models/user'
+import { UserModel } from '@/models/user'
 import NextAuth from 'next-auth/next'
 import GoogleProvider from 'next-auth/providers/google'
 
